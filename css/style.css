@@ -1,0 +1,175 @@
+html, body{
+    font-family: font-family: 'Dosis', sans-serif;
+}
+
+
+/* -------------------Header-----------------*/
+.hero {
+    position: relative;
+}
+
+.hero-graphic /* big picture*/{
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.hero-inner /* headshot and links */{
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.hero-inner img /*headshot */{
+    width: 250px;
+    display: block;
+    margin: -50px auto 5px;
+}
+
+.hero-inner ul /* the links */{
+    padding: 0;
+}
+
+.hero-inner li /* list of links */{
+    display: inline;
+    margin: 0 2px;
+}
+
+.hero-inner li a /* buttons */{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* ---------------------NAV BAR-------------------*/
+.nav-bar /* About Projects Contact, navigation bar */{
+    background: #45A29E;
+    z-index: 1;
+    position: sticky /*nav bar moves*/;
+    top: 0;
+    padding: 10px 0;
+}
+.nav-bar ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nav-bar a {
+    padding: 2px 5px;
+    text-transform: uppercase;
+    color: #C5C6C7;
+}
+
+/*----------------------ABOUT ME-----------------------*/
+.sub-heading {
+    text-transform: uppercase;
+}
+.about-me {
+    background-color: #1F2833;
+    color: #45A29E;
+    padding-bottom: 18px;
+}
+.resumebutton{
+    background-color: #C5C6C7;
+    font-family: 'Chango', cursive;
+    color: #45A29E;
+}
+
+/*---------------------PROJECTS------------------------*/
+.projects {
+    background-color: #C5C6C7;
+}
+.project-row{
+    background-color: #1F2833;
+}
+
+/*---------------------CONTACT-------------------------*/
+.contact{
+    padding: 24px 0;
+    color: #45A29E;
+
+}
+
+address {
+    display: inline;
+}
+
+.contact ul{
+    list-style: none;
+    padding: 24px 0;
+}
+
+/*--------------------SOCIAL--------------------------*/
+.social ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social li{
+    display: inline;
+}
+
+.social li a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    background: rgb(104, 120, 184);
+    color: rgb(3, 7, 240);
+    text-align: center;
+}
+
+/*-----------------------------------------------------*/
+.view {
+    color: #C5C6C7;
+    background-color: transparent;
+    font-family: 'Chango', cursive;
+    background-origin: padding-box;
+
+}
+
+/*-----------------------------------------------------*/
+.about, .social {
+    padding: 24px 0;
+    background: #1F2833;
+    color: #C5C6C7;
+}
+
+h2 {
+    font-family: 'Chango', cursive;
+}
+
+.sub-heading {
+    text-transform: uppercase;
+}
+
+/*-----View Project Buttons ------*/
+.default {
+    border-color: #e7e7e7;
+    color: #1F2833;
+}
+.default:hover{
+    background: #C5C6C7;
+}
+.btn {
+    border-radius: 5px;
+}
+
+
+/*--------------------------------*/
+#1F2833
+#C5C6C7
+#66FCF1
+#45A29E
+
