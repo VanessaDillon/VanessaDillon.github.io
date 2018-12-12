@@ -1,175 +1,288 @@
-html, body{
-    font-family: font-family: 'Dosis', sans-serif;
+*{
+    box-sizing: border-box;
 }
+body{
+    margin: 0;
+    font-family: sans-serif;
 
-
-/* -------------------Header-----------------*/
+}
 .hero {
-    position: relative;
-}
+    /* sizing */
+    width: 100vw;
+    height: 100vh; /* percent of the viewport width & height. hero set to 100% of the browser w&h */
 
-.hero-graphic /* big picture*/{
-    max-height: 200px;
-    overflow: hidden;
-}
+    /* flex it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.hero-inner /* headshot and links */{
+    /* background styles */
+    background-image: url("../images/treelight.jpg");
+    background-size: cover; /* makes sure the background is large enough to cover the entire hero*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*image stays in the same spot even when you scroll */
+
+    /* text styles */
     text-align: center;
-    padding-bottom: 24px;
 }
 
-.hero-inner img /*headshot */{
-    width: 250px;
+.hero h1{
+    font-size: 50pt;
+    color: saddlebrown;
+    margin-top: 0;
+    margin-bottom: 0.5pt;
+    text-shadow: 3px 2px rgb(214, 117, 117);
+}
+.hero h2{
+    text-shadow: 3px 2px rgb(27, 26, 26);
+    color: goldenrod;
+}
+.hero .hbutt{
+    /* positioning and sizing */
     display: block;
-    margin: -50px auto 5px;
+    width: 200px;
+
+    /*padding and margins */
+    padding: 1pt;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* text styles */
+    color: rgb(73, 73, 4);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+
+    /*border styles */
+    border: 3px solid sienna;
+    border-radius: 20px;
+    
+   
 }
 
-.hero-inner ul /* the links */{
-    padding: 0;
+.hero .hbutt:hover{
+    background-color: rgb(73, 73, 4);
+    color: whitesmoke;
+    border: 3px solid saddlebrown;
 }
 
-.hero-inner li /* list of links */{
-    display: inline;
-    margin: 0 2px;
+.rownav{
+    width: 100%;
+    margin: 0 auto;
+    
 }
 
-.hero-inner li a /* buttons */{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+header {
+    background-color: coral;
+    width: 100%;
+    padding-top: 20px;
+    height: 150px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.img{
+    height: 140px;
+    width: 140px;
     border-radius: 50%;
-    text-align: center;
+    float: left;
+    padding: 10px;
+    padding-bottom: 15px;
+    
+    
 }
 
-/* ---------------------NAV BAR-------------------*/
-.nav-bar /* About Projects Contact, navigation bar */{
-    background: #45A29E;
-    z-index: 1;
-    position: sticky /*nav bar moves*/;
+.nav{
+    position: sticky;
+    
+}
+
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.navbar li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar a{
+    color: lightblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.navbar a:hover{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.navbar a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color:lightblue;
+    position: absolute;
     top: 0;
-    padding: 10px 0;
-}
-.nav-bar ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms; 
 }
 
-.nav-bar li {
-    display: inline;
-    margin: 0 5px;
+.navbar a:hover::before{
+    width: 10%;
 }
-
-.nav-bar a {
-    padding: 2px 5px;
-    text-transform: uppercase;
-    color: #C5C6C7;
-}
-
-/*----------------------ABOUT ME-----------------------*/
-.sub-heading {
-    text-transform: uppercase;
-}
-.about-me {
-    background-color: #1F2833;
-    color: #45A29E;
-    padding-bottom: 18px;
-}
-.resumebutton{
-    background-color: #C5C6C7;
-    font-family: 'Chango', cursive;
-    color: #45A29E;
-}
-
-/*---------------------PROJECTS------------------------*/
-.projects {
-    background-color: #C5C6C7;
-}
-.project-row{
-    background-color: #1F2833;
-}
-
-/*---------------------CONTACT-------------------------*/
-.contact{
-    padding: 24px 0;
-    color: #45A29E;
-
-}
-
-address {
-    display: inline;
-}
-
-.contact ul{
-    list-style: none;
-    padding: 24px 0;
-}
-
-/*--------------------SOCIAL--------------------------*/
-.social ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-.social li{
-    display: inline;
-}
-
-.social li a{
+.icons li{
     display: inline-block;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50%;
-    background: rgb(104, 120, 184);
-    color: rgb(3, 7, 240);
+}
+.icons ul{
+    list-style: none;
+}
+
+.rowcontacts{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.address ul{
+    margin: 0;
+    padding: 0;
+    
+}
+.address li{
+    display: inline-block;
+}
+.social ul{
+    list-style: none;
+}
+.social li{
+    display: inline-block;
+}
+.social a{
+    text-decoration: none;
+}
+
+.ico i{
+    background-color: palegoldenrod;
+    border: 5px solid peachpuff;
+    border-radius: 4px;
+    color: firebrick;
+    font-size: 32px;
+    margin-left: 12px;
+}
+.ico i:hover{
+    background-color: peachpuff;
+    border: 5px solid palegoldenrod;
+    border-radius: 4px;
+    text-shadow: 2px 3px white;
+}
+.split{
+    line-height: 20px;
+    background-color: thistle;
+    height: 18px;
+}
+.sub-heading{
+    line-height: 50px;
+    font-size: 48px;
+    background-color: rosybrown;
+    font-weight: bold;
+    border-radius: 4px;
+    color: rgb(156, 32, 32);
+    text-shadow: 3px 2px honeydew;
+    
+}
+main{
+    background-color: tan;
+    font-family: 'Roboto Mono', monospace;
+}
+
+section{
+    background-color: slategrey;
+}
+.projects{
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 12px;
+
+}
+.projimg{
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+    border: 3px solid firebrick;
+}
+.projimg:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.hurro{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/treeleaves.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.socifoot{
+    border-radius: 10px;
+    border: 2px solid rgb(22, 22, 22);
+    position: relative;
+    top: 10px;
     text-align: center;
 }
-
-/*-----------------------------------------------------*/
-.view {
-    color: #C5C6C7;
-    background-color: transparent;
-    font-family: 'Chango', cursive;
-    background-origin: padding-box;
-
+audio{
+    text-align: center;
 }
-
-/*-----------------------------------------------------*/
-.about, .social {
-    padding: 24px 0;
-    background: #1F2833;
-    color: #C5C6C7;
-}
-
-h2 {
-    font-family: 'Chango', cursive;
-}
-
-.sub-heading {
-    text-transform: uppercase;
-}
-
-/*-----View Project Buttons ------*/
-.default {
-    border-color: #e7e7e7;
-    color: #1F2833;
-}
-.default:hover{
-    background: #C5C6C7;
-}
-.btn {
-    border-radius: 5px;
+.arcade{
+    background-color: darkgoldenrod;
+    border-bottom-color: brown;
+    text-shadow: 1px 2px palevioletred;
 }
 
 
-/*--------------------------------*/
-#1F2833
-#C5C6C7
-#66FCF1
-#45A29E
+footer{
+    font-family: 'Roboto Mono', monospace;
+    position: sticky;
+    bottom: 0;
+    background: rgba(221, 97, 97, 0.2);
+    color: transparent;
+    width: 100vw;
+}
 
+footer .socifoot a{
+    color: white;
+    text-size: 10px;
+}
+.address a:link{
+    color: transparent;
+}
+.address a:link:hover{
+    color:white;
+}
+footer:hover{
+    color: white;
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    background: lightcoral;
+}
+footer a:hover{
+    color: seashell;
+    text-decoration: none;
+}
+
+.line{
+    height: 24px;
+    background-color: black;
+    
+}
