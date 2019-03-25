@@ -30,8 +30,8 @@ body{
 .hero h1{
     font-size: 50pt;
     color: saddlebrown;
-    margin-top: 0;
-    margin-bottom: 0.5pt;
+    margin-top: 0 0 0.5pt 0;
+    /* margin-bottom: 0.5pt; */
     text-shadow: 3px 2px rgb(214, 117, 117);
 }
 .hero h2{
@@ -62,7 +62,7 @@ body{
    
 }
 
-.hero .hbutt:hover{
+.hero .hbutt:hover{ /*hover effect on the hero button */
     background-color: rgb(73, 73, 4);
     color: whitesmoke;
     border: 3px solid saddlebrown;
@@ -82,7 +82,7 @@ header {
     font-family: 'Inconsolata', monospace;
 }
 
-.img{
+.img{ /* headshot image */
     height: 140px;
     width: 140px;
     border-radius: 50%;
@@ -146,7 +146,7 @@ header {
     list-style: none;
 }
 
-.rowcontacts{
+.contact{
     width: 100%;
     margin: 0 auto;
     
@@ -213,7 +213,7 @@ section{
     padding-bottom: 12px;
 
 }
-.projimg{
+.projimg{ /* images of projects */
     background-size: contain;
     width: 50%;
     height: 50%;
@@ -282,11 +282,7 @@ footer a:hover{
     text-decoration: none;
 }
 
-.line{
-    height: 24px;
-    background-color: black;
-    
-}
+
 
 .navbar a{
     color: lightblue;
