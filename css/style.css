@@ -1,302 +1,96 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Comfortaa', cursive; */
+/* font styles */
+
+
 *{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    font-family: sans-serif;
-
-}
-.hero {
-    /* sizing */
-    width: 100vw;
-    height: 100vh; /* percent of the viewport width & height. hero set to 100% of the browser w&h */
-
-    /* flex it */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* background styles */
-    background-image: url("../images/treelight.jpg");
-    background-size: cover; /* makes sure the background is large enough to cover the entire hero*/
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /*image stays in the same spot even when you scroll */
-
-    /* text styles */
-    text-align: center;
-}
-
-.hero h1{
-    font-size: 50pt;
-    color: saddlebrown;
-    margin-top: 0 0 0.5pt 0;
-    /* margin-bottom: 0.5pt; */
-    text-shadow: 3px 2px rgb(214, 117, 117);
-}
-.hero h2{
-    text-shadow: 3px 2px rgb(27, 26, 26);
-    color: goldenrod;
-}
-.hero .hbutt{
-    /* positioning and sizing */
-    display: block;
-    width: 200px;
-
-    /*padding and margins */
-    padding: 1pt;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-
-    /* text styles */
-    color: rgb(73, 73, 4);
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-
-    /*border styles */
-    border: 3px solid sienna;
-    border-radius: 20px;
-    
-   
-}
-
-.hero .hbutt:hover{ /*hover effect on the hero button */
-    background-color: rgb(73, 73, 4);
-    color: whitesmoke;
-    border: 3px solid saddlebrown;
-}
-
-.rownav{
-    width: 100%;
-    margin: 0 auto;
-    
-}
-
-header {
-    background-color: coral;
-    width: 100%;
-    padding-top: 20px;
-    height: 150px;
+    /* background-color: white; */
     font-family: 'Inconsolata', monospace;
 }
-
-.img{ /* headshot image */
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    float: left;
-    padding: 10px;
-    padding-bottom: 15px;
-    
-    
-}
-
-.nav{
-    position: sticky;
-    
-}
-
-
-.navbar ul{
+html, body{
     margin: 0;
     padding: 0;
-    list-style: none;
-    
-}
-.navbar li{
-    display: inline-block;
-    margin-left: 20px;
-    padding-top: 40px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.navbar a{
-    color: lightblue;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: bold;
-
-}
-.navbar a:hover{
-    color: lightblue;
-    text-decoration: none;
-}
-
-.navbar a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color:lightblue;
-    position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 250ms; 
-}
-
-.navbar a:hover::before{
-    width: 10%;
-}
-.icons li{
-    display: inline-block;
-}
-.icons ul{
-    list-style: none;
-}
-
-.contact{
     width: 100%;
-    margin: 0 auto;
-    
 }
-
-.address ul{
-    margin: 0;
-    padding: 0;
-    
-}
-.address li{
-    display: inline-block;
-}
-.social ul{
-    list-style: none;
-}
-.social li{
-    display: inline-block;
-}
-.social a{
-    text-decoration: none;
-}
-
-.ico i{
-    background-color: palegoldenrod;
-    border: 5px solid peachpuff;
-    border-radius: 4px;
-    color: firebrick;
-    font-size: 32px;
-    margin-left: 12px;
-}
-.ico i:hover{
-    background-color: peachpuff;
-    border: 5px solid palegoldenrod;
-    border-radius: 4px;
-    text-shadow: 2px 3px white;
-}
-.split{
-    line-height: 20px;
-    background-color: thistle;
-    height: 18px;
-}
-.sub-heading{
-    line-height: 50px;
-    font-size: 48px;
-    background-color: rosybrown;
-    font-weight: bold;
-    border-radius: 4px;
-    color: rgb(156, 32, 32);
-    text-shadow: 3px 2px honeydew;
-    
+/* img{
+    width: 50%;
+    height: auto;
+} */
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1442124920820-8e5f4b07b563?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80) no-repeat 50% 50%;
+    background-size: cover;
 }
 main{
-    background-color: tan;
-    padding-bottom: 15px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-section{
-    background-color: slategrey;
-}
-.projects{
-    font-family: 'Roboto Mono', monospace;
-    padding-bottom: 12px;
-
-}
-.projimg{ /* images of projects */
-    background-size: contain;
-    width: 50%;
-    height: 50%;
-    border: 3px solid firebrick;
-}
-.projimg:hover{
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-.hurro{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-image: url("../images/treeleaves.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+    background: url()
 }
-
-.socifoot{
-    border-radius: 10px;
-    border: 2px solid rgb(22, 22, 22);
+.content{
+    width: 94%;
+    font-size: 20px;
+    /* line-height: 30px; */
+    text-align: justify;
+}
+.logo{
+    line-height: 60px;
     position: relative;
-    top: 10px;
-    text-align: center;
+    float: left;
+    
+
 }
-audio{
-    text-align: center;
-}
-.arcade{
-    background-color: darkgoldenrod;
-    border-bottom-color: brown;
-    text-shadow: 1px 2px palevioletred;
+nav {
+    position: relative;
+    width: 100%;
+    line-height: 60px;
+    float: inline-start;
 }
 
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: whitesmoke;
+    position: relative;
+    padding: 0; 
+    text-align: right;
+    margin: 0;
+    padding-left: 60px;
+    transition: 1s;
+    margin-left: 50px;
+}
+nav ul li {
+    display: inline-block;
+    padding: 16px 20px;
+}
 
-footer{
-    font-family: 'Roboto Mono', monospace;
-    position: sticky;
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+/* .menu-icon{
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+} */
+img{
+    border: 3px solid yellow;
+    width: 75%;
+    height: auto;
+    background-size:contain;
+}
+.footer{
+    left: 0;
     bottom: 0;
-    background: rgba(221, 97, 97, 0.2);
-    color: transparent;
-    width: 100vw;
-}
-
-footer .socifoot a{
-    color: white;
-    text-size: 10px;
-}
-.address a:link{
-    color: transparent;
-}
-.address a:link:hover{
-    color:white;
-}
-footer:hover{
-    color: white;
-    position: sticky;
-    bottom: 0;
-    width: 100vw;
-    background: lightcoral;
-}
-footer a:hover{
-    color: seashell;
-    text-decoration: none;
-}
-
-
-
-.navbar a{
-    color: lightblue;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: bold;
-
-}
-.navbar a:hover{
-    color: lightblue;
-    text-decoration: none;
-}
-
-.button{
-    border-radius: 5px;
+    width: 100%;
+    background-color: red;
 }
