@@ -57,6 +57,7 @@ main{
 .about{
     color: whitesmoke;
     text-shadow: 1px 1px 1px black;
+    margin-left:60px;
 }
 
 .navbar a {
@@ -68,6 +69,9 @@ main{
     background-color: rgba(0, 0, 0, 0.815);
     color: white;
     text-shadow: 1px 1px 1px whitesmoke;
+}
+#portfolio .items{
+    display: none;
 }
 
 img{
