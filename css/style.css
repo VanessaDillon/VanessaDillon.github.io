@@ -27,28 +27,17 @@ main{
     height: 100vh;
     background: url()
 }
-.content{
-    width: 94%;
-    font-size: 20px;
-    /* line-height: 30px; */
-    text-align: justify;
-}
-.logo{
-    line-height: 60px;
-    position: relative;
-    float: left;
-    
 
-}
-nav {
+
+.navbar {
     position: relative;
     width: 100%;
     line-height: 60px;
     float: inline-start;
 }
 
-nav ul {
-    line-height: 60px;
+.navbar ul {
+    
     list-style: none;
     background: rgba(0, 0, 0, 0);
     overflow: hidden;
@@ -57,40 +46,33 @@ nav ul {
     padding: 0; 
     text-align: right;
     margin: 0;
-    padding-left: 60px;
+    padding-left: 50px;
     transition: 1s;
-    margin-left: 50px;
+    margin-left: 40px;
 }
-nav ul li {
+.navbar li {
     display: inline-block;
-    padding: 16px 20px;
+    padding: 12px 20px;
+}
+.about{
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
 }
 
-nav ul li a {
+.navbar a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 20px;
 }
-/* .menu-icon{
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
-} */
+#portfolio{
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+
 img{
     border: 3px solid yellow;
     width: 75%;
     height: auto;
     background-size:contain;
-}
-.footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
 }

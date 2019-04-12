@@ -14,45 +14,57 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 logo">
-                        <!-- logo -->
-                        <img src="../Githubpage/images/MYTlogo.png" alt="my logo" class="img-responsive">
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="menu">
-                            <!-- menu -->
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
+        <div class="container navbar">
+            <div class="row">
+                <div class="col-sm-6 logo">
+                    <!-- logo -->
+                    <img src="../Githubpage/images/finlogo.png" alt="my logo" class="img-responsive">
+                </div>
+                <div class="col-sm-6">
+                    <div class="menu">
+                        <!-- menu -->
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </nav> 
+        </div>
+
+
+        <div class="container title">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Web Developer</h2>
+                </div>
+            </div>
+            
+        </div>
     </header>
     <!-- navigation end -->
     <!-- main content begins -->
     <main class="content">
-        <h1>Vanessa Dillon</h1>
-        <h2>Web Developer</h2>
-        <button>Enter</button>
-
+        
         <section id="about">
-            <h1>Hello, I'm Vanessa</h1>
-            <p>I like to describe myself as an ambitious learner. I am currently seeking employment opportunities related to front-end web 
-                development. Open to mentors and anyone with tips on web development. I am currently skilled in HTML5/ CSS3, Javascript 
-                (ES6 as well as RegEx), MySQL, and Python. Actively learning Node.js and React!</p>
-            <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
+            <div class="container about">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Hello, I'm Vanessa Dillon</h1>
+                        <p>I like to describe myself as an ambitious learner. I am currently seeking employment opportunities related to front-end web 
+                            development. Open to mentors and anyone with tips on web development. I am currently skilled in HTML5/ CSS3, Javascript 
+                            (ES6 as well as RegEx), MySQL, and Python. Actively learning Node.js and React!</p>
+                        <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
+                    </div>
+                </div>
+            </div>
+           
         </section>
 
         <section id="portfolio">
-            <div class="p-header"><!-- portfolio header -->
+            <div class="container p-header"><!-- portfolio header -->
                 <div class="row">
                     <div class="col-sm-12">
                         <h1><a href="#">Portfolio</a></h1>
@@ -60,9 +72,10 @@
                     </div>
                 </div>
             </div>
-            <div class="items">
+            <div class="container items">
                 <div class="row">
                     <div class="col-sm-4">
+                        
                         <h2>ATM Project</h2>
                         <img src="images/atm2.png" alt="atm screenshot" class="img-responsive">
                         <p>In this project I had to design a fully functional ATM machine using HTML/CSS and Javascript. The ATM is fully 
@@ -129,28 +142,23 @@
         </section>
 
         <section id="contact">
-            <h1>How to reach me</h1>
-            <p><a href="mailto:vanessadillonmalisha@gmail.com"><i class="fas fa-envelope-open-text"></i></a>vanessadillonmalisha@gmail.com</p>
-            <p><a href="https://twitter.com/nessacodes"><i class="fab fa-twitter"></i></a>Follow or Dm me on Twitter!</p>
+            <div class="contact">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="../Githubpage/images/finlogo.png" alt="my logo" class="img-responsive">
+                    </div>
+                    <div class="col-sm-6">
+                        <h1>How to reach me</h1>
+                        <p><a href="mailto:vanessadillonmalisha@gmail.com"><i class="fas fa-envelope-open-text"></i></a>vanessadillonmalisha@gmail.com</p>
+                        <p><a href="https://twitter.com/nessacodes"><i class="fab fa-twitter"></i></a>Follow or Dm me on Twitter!</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </main>
     
-    <div class="container footer">
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="../Githubpage/images/MYTlogo.png" alt="" class="img-responsive"><!--logo-->
-            </div>
-            
-            <div class="col-sm-6">
-                <h3>Follow Me</h3>
-                <a href="https://www.facebook.com/vanessa.dillon.779"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/nessacodes"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/vanessa-dillon-0576b9120/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/VanessaDillon"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/dasfinessa/"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>            
-    </div>
+    
     
 </body>
 </html>
