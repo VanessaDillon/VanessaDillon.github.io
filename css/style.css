@@ -13,7 +13,7 @@ html, body{
     width: 100%;
 }
 /* img{
-    width: 50%;
+    width: 50%;000000000
     height: auto;
 } */
 header{
@@ -21,6 +21,7 @@ header{
     height: 100vh;
     background: url(https://images.unsplash.com/photo-1442124920820-8e5f4b07b563?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80) no-repeat 50% 50%;
     background-size: cover;
+    background-color: aqua;
 }
 main{
     width: 100%;
@@ -72,6 +73,7 @@ main{
 }
 #portfolio .items{
     display: none;
+    
 }
 
 img{
