@@ -1,27 +1,17 @@
-/* font-family: 'Inconsolata', monospace;
-font-family: 'Comfortaa', cursive; */
-/* font styles */
 
 
 *{
     /* background-color: white; */
     font-family: 'Inconsolata', monospace;
 }
-html, body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-/* img{
-    width: 50%;000000000
-    height: auto;
-} */
+
+
 header{
     width: 100%;
     height: 100vh;
     background: url(https://images.unsplash.com/photo-1442124920820-8e5f4b07b563?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80) no-repeat 50% 50%;
     background-size: cover;
-    background-color: aqua;
+    
 }
 main{
     width: 100%;
@@ -44,12 +34,12 @@ main{
     overflow: hidden;
     color: whitesmoke;
     position: relative;
-    padding: 0; 
+    
     text-align: right;
-    margin: 0;
+    
     padding-left: 50px;
-    transition: 1s;
-    margin-left: 40px;
+    transition: 4s;
+    
 }
 .navbar li {
     display: inline-block;
@@ -57,28 +47,64 @@ main{
 }
 .about{
     color: whitesmoke;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 2px black;
     margin-left:60px;
+    background-color: rgb(218, 159, 32);
 }
 
 .navbar a {
     text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
+    color: rgb(142, 7, 253);
+    font-size: 25px;
+}
+.navbar a:hover{
+    text-decoration: none;
+    color: white ;
+    text-shadow: 2px 2px 2px rgb(142, 7, 253) ;
+    
 }
 #portfolio{
     background-color: rgba(0, 0, 0, 0.815);
     color: white;
     text-shadow: 1px 1px 1px whitesmoke;
+    border-radius: 5px;
 }
+
 #portfolio .items{
     display: none;
     
 }
+#portfolio a{
+    color: whitesmoke;
+}
+#portfolio a:hover{
+    text-decoration: none;
+    color: white;
 
+}
 img{
-    border: 3px solid yellow;
+    border: 3px solid goldenrod;
     width: 75%;
     height: auto;
     background-size:contain;
+}
+.title{
+    
+    font-size: 32px;
+    color: whitesmoke;
+    
+    float: bottom;
+    text-shadow: 3px 3px 3px rgb(37, 37, 1);
+    
+
+}
+.head{
+    text-align: right;
+    position: relative;
+    top: 150px;
+}
+.logo{
+    height: auto;
+    width: 30%;
+    float: right;
 }

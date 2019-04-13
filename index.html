@@ -16,29 +16,25 @@
     <header>
         <div class="container navbar">
             <div class="row">
-                <div class="col-sm-6 logo">
-                    <!-- logo -->
-                    <img src="images/finlogo.png" alt="my logo" class="img-responsive">
-                </div>
-                <div class="col-sm-6">
-                    <div class="menu">
-                        <!-- menu -->
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="col-sm-12">
+            
+                    <!-- menu -->
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
 
-        <div class="container title">
+        <div class="container head">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2>Web Developer</h2>
+                    <img src="images/finlogo.png" alt="my logo" class="img-responsive logo">
+                    <h2 class="title"><strong>Web Developer</strong></h2>
                 </div>
             </div>
             
@@ -46,7 +42,7 @@
     </header>
     <!-- navigation end -->
     <!-- main content begins -->
-    <main class="content">
+    <main class="container content">
         
         <div class="container about">
             <div class="row">
@@ -60,11 +56,11 @@
             </div>
         </div>
 
-        <section id="portfolio">
-            <div class="container p-header"><!-- portfolio header -->
+        <div id="portfolio">
+            <div class="container portfolio"><!-- portfolio header -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1><a href="#portfolio" onclick="toggle_visibility('foo');">Portfolio</a></h1>
+                        <h1><a href="#portfolio" onclick="toggle_visibility('foo');">P o r t f o l i o</a></h1>
                         <p>Things I've worked really on!</p>
                     </div>       
                 <div class="container items" id="foo">
@@ -124,30 +120,31 @@
                             <a href="https://codepen.io/laughtering_/pen/XGmwPX"><button>View Project</button></a>
                         </div>
                         <div class="col-sm-4">
-                            <h2>Pizza Restaurant</h2>
-                            <img src="images/pizzarest.png" alt="">
-                            <p>One of the first projects i've ever completed.. A pizza restaurant homepage with basic HTML5 fundamentals applied.</p>
-                            <a href="../Pizza/index.html"><button>View Project</button></a>
+                            <h2>Weather App</h2>
+                            <img src="images/weather.png" alt="">
+                            <p>Using online resources, in this project I successfully created a Weather app that shows the correct degree of temperature of Celsius or Fahrenheit, uses an API to fetch data for location and temperature. Used Animated SVG icons for effect.</p>
+                            <a href="../Weather-app/index.html"><button>View Project</button></a>
                         </div>
                         <div class="col-sm-4">
                             <h2>Final Project</h2>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <div class="container contact">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img src="images/finlogo.png" alt="my logo" class="img-responsive">
-                    </div>
-                    <div class="col-sm-6">
-                        <h1>How to reach me</h1>
-                        <p><a href="mailto:vanessadillonmalisha@gmail.com"><i class="fas fa-envelope-open-text"></i></a>vanessadillonmalisha@gmail.com</p>
-                        <p><a href="https://twitter.com/nessacodes"><i class="fab fa-twitter"></i></a>Follow or Dm me on Twitter!</p>
-                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="container contact">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/finlogo.png" alt="my logo" class="img-responsive">
+                </div>
+                <div class="col-sm-6">
+                    <h1>How to reach me</h1>
+                    <p><a href="mailto:vanessadillonmalisha@gmail.com"><i class="fas fa-envelope-open-text"></i></a>vanessadillonmalisha@gmail.com</p>
+                    <p><a href="https://twitter.com/nessacodes"><i class="fab fa-twitter"></i></a>Follow or Dm me on Twitter!</p>
                 </div>
             </div>
+        </div>
             
     </main>
     <script src="js/script.js"></script>
