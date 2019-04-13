@@ -18,7 +18,8 @@
 
 
 
-
+const portfolio = document.getElementById('portfolio')
+portfolio.addEventListener('click', _ => portfolio.classList.toggle('is-active'))
 
 function toggle_visibility(id) {
     var e = document.getElementById(id);
