@@ -166,7 +166,20 @@ font-size: 25px;
     height: 150px;
     width: auto;
 }
+button{
+    background-color: goldenrod;
+    border-radius: 15px;
+    border: 1px solid rgba(253, 1, 140, 0.801);
+    color: white;
+    
+}
 
+button:hover{
+    background-color: rgba(253, 1, 140, 0.801);
+    border: 1px solid goldenrod;
+    color: white;
+    
+}
 
 /* 
   ##Device = Desktops
