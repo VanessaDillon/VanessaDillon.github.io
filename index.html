@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 
-    <link href="css/sequence-theme.parallax-basic.css" rel="stylesheet" media="all">
 </head>
 <body>
     <header>
@@ -203,98 +202,49 @@
             </div>
         </div>
     </div>
+    
+        <video id="bgVideo" autoplay muted loop poster="images/treeleaves.jpg">
+            <!-- Video is embedded in the WEBM format -->
+            <source src="images/coolvideo.webm" type="video/webm">
+            <source src="images/coolvideo.mp4" type="video/mp4">
+            Sorry, your browser does not support embedded videos.
+        </video> 
+    
 
-    <div id="sequence" class="seq">
-        
-        <div class="seq-screen">
-            <ul class="seq-canvas">
-                <video id="bgVideo" autoplay muted loop poster="images/driving.jpg">
-                    <!-- Video is embedded in the WEBM format -->
-                    <source src="images/coolvideo.webm" type="video/webm">
-                    <source src="images/coolvideo.mp4" type="video/mp4">
-                    Sorry, your browser does not support embedded videos.
-                </video> 
-            <li class="seq-in seq-valign">
-                <div class="seq-content">
-                    <div data-seq class="seq-description"> 
-
-                        <div class="container about">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h1>Hello, I'm Vanessa Dillon.</h1>
-                                    <p>I like to describe myself as an ambitious learner. I am currently seeking employment opportunities related to front-end web 
-                                        development. Open to mentors and anyone with tips on web development. I am currently skilled in HTML5/ CSS3, Javascript 
-                                        (ES6 as well as RegEx), MySQL, and Python. Actively learning Node.js and React!</p>
-                                    <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
-                                </div>
-                            </div>
-                        
+    <div class="container about">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Hello, I'm Vanessa Dillon.</h1>
+                <div class="container description">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>I like to describe myself as an ambitious learner. I am currently seeking employment opportunities related to front-end web 
+                                development. Open to mentors and anyone with tips on web development. I am currently skilled in HTML5/ CSS3, Javascript 
+                                (ES6 as well as RegEx), MySQL, and Python. Actively learning Node.js and React!</p>
+                            <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
                         </div>
-                    
                     </div>
                 </div>
-            </li>
-            <li class="seq-valign">
-                <div class="seq-content">
-                    <div data-seq class="seq-description">
-                        
-                        
-                    </div>
-                </div>
-            </li>
-            <li class="seq-valign">
-                <div class="seq-content">
                 
-                    <div data-seq class="seq-description">
-                        <div class="container follow">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                    
-                                        <p>Follow me on Social Media!</p>
-                                        <div class="row links">
-                                            <div class="col-sm-12">
-                                                <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
-                                                <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
-                                                <a href=""><i class="fab fa-github-square fa-3x"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                        <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
-                                    </div>
-                                </div>
-                            </div>
-            
+            </div>
+        </div>
+    </div>
+
+    <div class="container follow">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Follow me on Social Media!</p>
+                <div class="row links">
+                    <div class="col-sm-12">
+                        <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                        <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
+                        <a href=""><i class="fab fa-github-square fa-3x"></i></a>
                     </div>
-                
                 </div>
-            </li>
-            </ul>
+                <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
+            </div>
         </div>
-    
-        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
-            <button type="button" class="seq-prev" aria-label="Previous">
-            <span class="seq-prev-arrow">&lt;</span>
-            </button>
-    
-            <ul role="navigation" aria-label="Pagination" class="seq-pagination">
-            <li><a href="#step1" rel="step1" title="Go to slide 1">1</a></li>
-            <li><a href="#step2" rel="step2" title="Go to slide 2">2</a></li>
-            <li><a href="#step3" rel="step3" title="Go to slide 3">3</a></li>
-            </ul>
-    
-            <button type="button" class="seq-next" aria-label="Next">
-            <span class="seq-next-arrow">&gt;</span>
-            </button>
-        </fieldset>
-        </div>
-
-
-
-
-    
-
-        
-    
+    </div>
 
     <div class=" footer">
         <div class="row">
@@ -309,10 +259,7 @@
         </div>
     </div>
     <script src="js/script.js"></script>
-    <script src="scripts/imagesloaded.pkgd.min.js"></script>
-  <script src="scripts/hammer.min.js"></script>
-  <script src="scripts/sequence.min.js"></script>
-  <script src="scripts/sequence-theme.parallax-basic.js"></script>
+    
 
 </body>
 </html>
