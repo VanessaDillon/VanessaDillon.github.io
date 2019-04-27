@@ -16,10 +16,10 @@
 <body>
         <div class=" navbar">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 menu">
                     <!-- menu -->
-                    <a href="#">Home</a>
-                    <a href="#about" onclick="toggle_visibility('foo');">About</a>
+                    <a href="#home">Home</a>
+                    <a href="#about" >About</a>
                     <a href="#portfolio" onclick="toggle_visibility('foo');">Portfolio</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <img src="images/finlogo.png" alt="my logo" class="img-responsive logo">
-                    <h2 class="title"><strong>Web Developer</strong></h2>
+                    <h2 class="title">Web Developer</h2>
                 </div>
             </div>
         </div>
@@ -49,10 +49,10 @@
     </video> 
 
     <!-- about -->
-    <div class="container about" id="about">
+    <div class="container about" id="about"onclick="toggle_visibility('foo');" >
         <div class="row">
             <div class="col-sm-12">
-                <h1>Hello, I'm Vanessa Dillon.</h1>
+                <h1><a href="#about">Hello, I'm Vanessa Dillon.</a></h1>
                 <div class="container description">
                     <div class="row">
                         <div class="col-sm-12">
@@ -69,10 +69,10 @@
     </div>
 
     <!-- portfolio -->
-    <div class="container portfolio" id="portfolio">
+    <div class="container portfolio" id="portfolio" onclick="toggle_visibility('foo');">
         <div class="row">
             <div class="col-sm-12">
-                <h1><a href="#portfolio" onclick="toggle_visibility('foo');">Portfolio</a></h1>
+                <h1><a href="#portfolio" >Portfolio</a></h1>
                 <p>Things I've worked really on!</p>
             </div>
         </div>    
@@ -216,12 +216,10 @@
     </div>
     
     <!-- footer -->
-    <div class=" footer">
+    <div class="container footer">
         <div class="row">
-            <div class="col-sm-6">
-                <img src="images/finlogo.png" alt="my logo" class="img-responsive">
-            </div>
-            <div class="col-sm-6" id="contact">
+          
+            <div class="col-sm-12" id="contact">
                 <h1>Contact</h1>
                 <p><a href="mailto:vanessadillonmalisha@gmail.com"><i class="fas fa-envelope-open-text"></i></a>vanessadillonmalisha@gmail.com</p>
                 <p><a href="https://twitter.com/nessacodes"><i class="fab fa-twitter"></i></a>Follow or Dm me on Twitter!</p>

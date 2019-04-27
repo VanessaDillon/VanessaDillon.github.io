@@ -1,60 +1,77 @@
-
-
 *{
     /* background-color: white; */
     font-family: 'Inconsolata', monospace;
 }
 
-body{
+/* body{
     width: 100%;
     height: 100vh;
     background: url(../images/coolvideo.mp4) no-repeat 50% 50%;
     background-size: cover;
     
-}
+} */
 
 video{
-    
-    position: absolute;
+    /* position: absolute;
     top: 0px; 
     left: 0px;
     right: 0px;
     max-height: 100%; 
     max-width: 100%;
-    
+     */
     z-index: -2;
- 
 
+
+    object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
     position: relative;
     width: 100%;
+    margin-top:2px;
+    background-color: rgba(30, 6, 49, 0.479);
     
-    background-color: rgba(37, 8, 61, 0);
-    
-}
-.navbar:hover{
-background-color: rgba(255, 255, 255, 0);
-transition: all 2s ease-in-out;
-}
-.navbar a {
-    text-decoration: none;
-    position: relative;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: grey;
-}
-.navbar a:hover{
-    font-size: 30px;
-    color: rgb(226, 225, 225);
-    text-shadow: 2px 2px 2px rgba(66, 1, 66, 0.685);
-    transition: font-size 1s ease-in-out;
 }
 
+.navbar a {
+    text-decoration: none;
+    
+    
+    flex-direction: row;
+    color: rgba(250, 250, 246, 0.952);
+    display: inline-flex;
+    
+    
+    font-size: 25px;
+    
+}
+
+.navbar a:hover{
+
+
+    color: rgb(236, 252, 14);
+    text-shadow: 1px 1px 1px rgba(66, 1, 66, 0.685);
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+}
+
+
+.navbar .menu{
+    position: relative;
+    display: inline-flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+}
 .about{
+    display: none;
+
+
     color: whitesmoke;
     border-radius: 5px;
     text-shadow: 2px 2px 2px rgb(63, 46, 2);
@@ -104,23 +121,15 @@ transition: all 2s ease-in-out;
 
 
 
-.navbar a {
-    text-decoration: none;
-    color: rgba(255, 254, 255, 0.185);
-    font-size: 20px;
-}
-.navbar a:hover{
-    text-decoration: none;
-    color: white ;
-    text-shadow: 2px 2px 2px rgb(15, 2, 37) ;
-    
-}
+
+
 #portfolio h1:hover{
     text-shadow: 3px 3px 3px goldenrod;
 }
 
 #portfolio{
     
+
     background-color: rgba(31, 2, 59, 0.815);
     color: white;
     text-shadow: 1px 1px 1px whitesmoke;
@@ -128,8 +137,10 @@ transition: all 2s ease-in-out;
     border-top: 5px solid black;
     transition: background-color 2s ease-out;
     margin-top: 20px;
+    width: auto;
 }
 #portfolio.is-active{
+    display: block;
     background-color: rgba(165, 42, 42, 0.692);
     border-radius: 15px;
     border: 3px solid rgba(255, 255, 255, 0.747);
@@ -164,42 +175,40 @@ transition: all 2s ease-in-out;
     
     font-size: 32px;
     color: whitesmoke;
-    z-index: -1;
-    float: bottom;
+    
     text-shadow: 3px 3px 3px rgb(37, 37, 1);
     
 
 }
 .head{
-    text-align: left;
+    text-align: center;
     position: relative;
-    top: 50px;
-    z-index:1;
+    display: inline-flex;
+    flex-direction: row;
+
 }
+
 .logo{
-    height: auto;
-    width: 30%;
-    float: right;
+    height: 100;
+    width: 100px
+    
+    
 }
 .footer{
-    background-color: rgb(30, 19, 51);
-    width: 100%;
-    margin-top: 15px;
+    background-color: rgb(14, 7, 27);
+    width: 100vw;
+   display: none;
     color: white;
     text-align: right;
     border-top: 3px solid goldenrod;
-    
-    
+    bottom: 0;
+    position: absolute;
 }
 .footer i{
     
     color: whitesmoke;
 }
-.footer img{
-    margin-top: 50px;
-    height: auto;
-    width: 200px;
-}
+
 .items img{
     height: 150px;
     width: auto;
