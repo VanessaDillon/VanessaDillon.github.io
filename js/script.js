@@ -29,6 +29,17 @@ function toggle_visibility(id) {
        e.style.display = 'block';
  }
 
+ const about = document.getElementById('about')
+portfolio.addEventListener('click', _ => portfolio.classList.toggle('is-active'))
+
+function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'block')
+       e.style.display = 'none';
+    else
+       e.style.display = 'block';
+ }
+
 // function toggle_visibility(id) {
 //     var e = document.getElementById(id);
 //     e.style.display = ((e.style.display !='none') ? 'none' : 'block');

@@ -4,24 +4,25 @@
     /* background-color: white; */
     font-family: 'Inconsolata', monospace;
 }
-
+/* 
 header{
     width: 100%;
     height: 100vh;
-    background: url(https://images.unsplash.com/photo-1442124920820-8e5f4b07b563?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80) no-repeat 50% 50%;
+    background: url(../images/coolvideo.mp4) no-repeat 50% 50%;
     background-size: cover;
     
-}
+} */
 
 video{
     
     position: absolute;
     top: 0px; 
-    left: 0px; 
+    left: 0px;
+    right: 0px;
+    max-height: 100%; 
+    max-width: 100%;
     
-    min-width: 100%; 
-    min-height: 100%;
-    z-index: -1;
+    z-index: -2;
  
 
 }
@@ -29,37 +30,39 @@ video{
 .navbar {
     position: relative;
     width: 100%;
-    line-height: 60px;
-    float: inline-start;
+    padding-top: 25px;
+    background-color: rgba(37, 8, 61, 0);
+    
+}
+.navbar:hover{
+background-color: rgba(255, 255, 255, 0);
+transition: all 2s ease-in-out;
+}
+.navbar a {
+    text-decoration: none;
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+}
+.navbar a:hover{
+    font-size: 30px;
+    color: rgb(226, 225, 225);
+    text-shadow: 2px 2px 2px rgba(66, 1, 66, 0.685);
+    transition: font-size 1s ease-in-out;
 }
 
-.navbar ul {
-    
-    list-style: none;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    color: whitesmoke;
-    position: relative;
-    
-    text-align: right;
-    
-    transition-property: all;
-    transition: 4s;
-    
-}
-.navbar li {
-    display: inline-block;
-   margin-left: 15px;
-}
 .about{
     color: whitesmoke;
     border-radius: 5px;
     text-shadow: 2px 2px 2px rgb(63, 46, 2);
     background-color: rgba(218, 159, 32, 0.753);
-    margin: 20px 0px 30px 0px;
-    padding: 10px 20px 10px 20px;
+    margin: 150px 0px 30px 0px;
+    
     border: 1px solid rgb(163, 163, 163);
-    transition-property: font-size;
+    transition-property: all;
   transition-duration: 2s;
   transition-delay: 0.5s;
   border-top: 3px solid black;
@@ -73,7 +76,7 @@ video{
 .about h1{
     text-align: center;
     font-size: 48px;
-    text-shadow: 2px 3px 3px goldenrod;
+    text-shadow: 2px 3px 3px rgb(185, 137, 16);
     margin-top: 20px;
     padding-bottom: 10px;
 }
@@ -96,29 +99,20 @@ video{
 .about:hover .description{
     display: inline-block;
     
-    transition: all 0.5s ease-in-out;
+    transition: all 4s ease-in-out;
 }
-.follow{
-    background-color: rgba(235, 127, 235, 0.842);
-    border: 3px solid salmon;
-    padding-top: 25px;
-    padding-bottom: 50px;
-}
-.follow .links{
-    
-    padding-bottom: 10px;
-    padding-right: 50px;
-}
+
+
 
 .navbar a {
     text-decoration: none;
-    color: rgba(90, 3, 112, 0.979);
-    font-size: 25px;
+    color: rgba(255, 254, 255, 0.185);
+    font-size: 20px;
 }
 .navbar a:hover{
     text-decoration: none;
     color: white ;
-    text-shadow: 2px 2px 2px rgb(98, 0, 255) ;
+    text-shadow: 2px 2px 2px rgb(15, 2, 37) ;
     
 }
 #portfolio h1:hover{
@@ -126,16 +120,20 @@ video{
 }
 
 #portfolio{
+    
     background-color: rgba(31, 2, 59, 0.815);
     color: white;
     text-shadow: 1px 1px 1px whitesmoke;
     border-radius: 5px;
-    border-top: 3px solid black;
+    border-top: 5px solid black;
     transition: background-color 2s ease-out;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 #portfolio.is-active{
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0.692);
+    border-radius: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.747);
+    transition: all 1s ease-in;
 }
 
 #portfolio .items{
@@ -153,7 +151,7 @@ video{
 }
 #portfolio a:hover{
     text-decoration: none;
-    color: white;
+    color: yellow;
 
 }
 /* img{
@@ -166,16 +164,17 @@ video{
     
     font-size: 32px;
     color: whitesmoke;
-    
+    z-index: -1;
     float: bottom;
     text-shadow: 3px 3px 3px rgb(37, 37, 1);
     
 
 }
 .head{
-    text-align: right;
+    text-align: left;
     position: relative;
-    top: 150px;
+    top: 10px;
+    z-index:1;
 }
 .logo{
     height: auto;
@@ -183,17 +182,23 @@ video{
     float: right;
 }
 .footer{
-    background-color: grey;
+    background-color: rgb(30, 19, 51);
     width: 100%;
-    margin-top: 30px;
+    margin-top: 15px;
     color: white;
     text-align: right;
-    border-top: 2px solid goldenrod;
-    padding-right: 50px;
+    border-top: 3px solid goldenrod;
+    
+    
 }
 .footer i{
-    margin-right: 15px;
+    
     color: whitesmoke;
+}
+.footer img{
+    margin-top: 50px;
+    height: auto;
+    width: 200px;
 }
 .items img{
     height: 150px;

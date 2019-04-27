@@ -15,17 +15,14 @@
 </head>
 <body>
     <header>
-        <div class="container navbar">
+        <div class=" navbar">
             <div class="row">
                 <div class="col-sm-12">
-            
                     <!-- menu -->
-                    <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <a href="#">Home</a>
+                    <a href="#about" onclick="toggle_visibility('foo');">About</a>
+                    <a href="#portfolio" onclick="toggle_visibility('foo');">Portfolio</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -38,11 +35,13 @@
                     <h2 class="title"><strong>Web Developer</strong></h2>
                 </div>
             </div>
-            
         </div>
+
     </header>
     <!-- navigation end -->
     <!-- main content begins -->
+
+
     <!-- <div class="container about">
         <div class="row">
             <div class="col-sm-12">
@@ -56,7 +55,30 @@
             </div>
         </div>
     </div> -->
-
+    <video id="bgVideo" autoplay muted loop poster="images/treeleaves.jpg">
+        <!-- Video is embedded in the WEBM format -->
+        <source src="images/coolvideo.webm" type="video/webm">
+        <source src="images/coolvideo.mp4" type="video/mp4">
+        Sorry, your browser does not support embedded videos.
+    </video> 
+    <div class="container about" id="about">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Hello, I'm Vanessa Dillon.</h1>
+                <div class="container description">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>I like to describe myself as an ambitious learner. I am currently seeking employment opportunities related to front-end web 
+                                development. Open to mentors and anyone with tips on web development. I am currently skilled in HTML5/ CSS3, Javascript 
+                                (ES6 as well as RegEx), MySQL, and Python. Actively learning Node.js and React!</p>
+                            <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     <div class="container portfolio" id="portfolio"><!-- portfolio header -->
         <div class="row">
             <div class="col-sm-12">
@@ -203,55 +225,19 @@
         </div>
     </div>
     
-        <video id="bgVideo" autoplay muted loop poster="images/treeleaves.jpg">
-            <!-- Video is embedded in the WEBM format -->
-            <source src="images/coolvideo.webm" type="video/webm">
-            <source src="images/coolvideo.mp4" type="video/mp4">
-            Sorry, your browser does not support embedded videos.
-        </video> 
+        
     
 
-    <div class="container about">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Hello, I'm Vanessa Dillon.</h1>
-                <div class="container description">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p>I like to describe myself as an ambitious learner. I am currently seeking employment opportunities related to front-end web 
-                                development. Open to mentors and anyone with tips on web development. I am currently skilled in HTML5/ CSS3, Javascript 
-                                (ES6 as well as RegEx), MySQL, and Python. Actively learning Node.js and React!</p>
-                            <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+    
 
-    <div class="container follow">
-        <div class="row">
-            <div class="col-sm-12">
-                <p>Follow me on Social Media!</p>
-                <div class="row links">
-                    <div class="col-sm-12">
-                        <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
-                        <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
-                        <a href=""><i class="fab fa-github-square fa-3x"></i></a>
-                    </div>
-                </div>
-                <i class="fas fa-award"> Click <a href="https://www.freecodecamp.org/certification/dasfinessa/responsive-web-design">here</a> to view my Responsive Web Design certification from <a href="https://www.freecodecamp.org/">FreeCodeCamp!</a></i>
-            </div>
-        </div>
-    </div>
+   
 
     <div class=" footer">
         <div class="row">
             <div class="col-sm-6">
                 <img src="images/finlogo.png" alt="my logo" class="img-responsive">
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="contact">
                 <h1>Contact</h1>
                 <p><a href="mailto:vanessadillonmalisha@gmail.com"><i class="fas fa-envelope-open-text"></i></a>vanessadillonmalisha@gmail.com</p>
                 <p><a href="https://twitter.com/nessacodes"><i class="fab fa-twitter"></i></a>Follow or Dm me on Twitter!</p>
