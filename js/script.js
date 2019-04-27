@@ -30,7 +30,7 @@ function toggle_visibility(id) {
  }
 
  const about = document.getElementById('about')
-portfolio.addEventListener('click', _ => portfolio.classList.toggle('is-active'))
+about.addEventListener('click', _ => about.classList.toggle('is-active'))
 
 function toggle_visibility(id) {
     var e = document.getElementById(id);

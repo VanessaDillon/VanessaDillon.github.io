@@ -4,14 +4,14 @@
     /* background-color: white; */
     font-family: 'Inconsolata', monospace;
 }
-/* 
-header{
+
+body{
     width: 100%;
     height: 100vh;
     background: url(../images/coolvideo.mp4) no-repeat 50% 50%;
     background-size: cover;
     
-} */
+}
 
 video{
     
@@ -30,7 +30,7 @@ video{
 .navbar {
     position: relative;
     width: 100%;
-    padding-top: 25px;
+    
     background-color: rgba(37, 8, 61, 0);
     
 }
@@ -173,7 +173,7 @@ transition: all 2s ease-in-out;
 .head{
     text-align: left;
     position: relative;
-    top: 10px;
+    top: 50px;
     z-index:1;
 }
 .logo{
