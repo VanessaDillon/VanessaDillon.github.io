@@ -3,22 +3,8 @@
     font-family: 'Inconsolata', monospace;
 }
 
-/* body{
-    width: 100%;
-    height: 100vh;
-    background: url(../images/coolvideo.mp4) no-repeat 50% 50%;
-    background-size: cover;
-    
-} */
-
 video{
-    /* position: absolute;
-    top: 0px; 
-    left: 0px;
-    right: 0px;
-    max-height: 100%; 
-    max-width: 100%;
-     */
+  
     z-index: -2;
 
 
@@ -34,40 +20,32 @@ video{
     position: relative;
     width: 100%;
     margin-top:2px;
-    background-color: rgba(30, 6, 49, 0.479);
+    background-color: rgba(223, 189, 252, 0.11);
+    display: inline-flex;
+    justify-content: space-evenly;
     
 }
-
+.navbar:hover{
+    background-color: rgba(223, 189, 252, 0.288);
+    border-top: 2px solid rgba(255, 255, 0, 0.342);
+}
 .navbar a {
     text-decoration: none;
-    
-    
-    flex-direction: row;
     color: rgba(250, 250, 246, 0.952);
-    display: inline-flex;
-    
-    
-    font-size: 25px;
-    
+    font-size: 22px;
+    margin-left: 35px;
 }
 
 .navbar a:hover{
-
-
     color: rgb(236, 252, 14);
-    text-shadow: 1px 1px 1px rgba(66, 1, 66, 0.685);
+    text-shadow: 2px 1px 2px rgba(66, 1, 66, 0.685);
     transition: all 1s ease-in-out;
     text-decoration: none;
-}
-
-
-.navbar .menu{
-    position: relative;
-    display: inline-flex;
     
-    align-items: center;
-    justify-content: space-evenly;
 }
+
+
+
 
 
 
@@ -75,12 +53,12 @@ video{
 
     border-radius: 5px;
     background-color: rgba(218, 159, 32, 0.753);
-    margin: 50px 0px 30px 0px;
+    margin: 50px auto 30px auto;
     
     border: 1px solid rgb(163, 163, 163);
     transition-property: all;
   transition-duration: 2s;
-  transition-delay: 0.5s;
+  
   border-top: 3px solid black;
 }
 .about a{
@@ -90,7 +68,7 @@ video{
 
 .about a:hover{
     color: yellow;
-    transition: all 2s ease-in;
+    transition: all 1s ease-in-out;
     text-decoration: none;
 }
 .about h1{
@@ -100,6 +78,10 @@ video{
     margin-top: 20px;
     padding-bottom: 10px;
 }
+.about:hover{
+    transition: all 1s ease-in-out;
+}
+
 .about h1:hover{
     
     text-shadow: 3px 3px 3px whitesmoke;
@@ -150,7 +132,7 @@ video{
 }
 #portfolio.is-active{
     display: block;
-    background-color: rgba(165, 42, 42, 0.692);
+    background-color: rgba(165, 42, 42, 0.452);
     border-radius: 15px;
     border: 3px solid rgba(255, 255, 255, 0.747);
     transition: all 1s ease-in;
@@ -177,19 +159,12 @@ video{
     color: yellow;
 
 }
-/* img{
-    border: 5px solid goldenrod;
-    width: 75%;
-    height: auto;
-    background-size:contain;
-} */
+
 .title{
-    
     font-size: 32px;
     color: whitesmoke;
     
     text-shadow: 3px 3px 3px rgb(37, 37, 1);
-    
 
 }
 .head{

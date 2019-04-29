@@ -17,8 +17,9 @@
 //     })
 
 
-
+const about = document.getElementById('about')
 const portfolio = document.getElementById('portfolio')
+
 portfolio.addEventListener('click', _ => portfolio.classList.toggle('is-active'))
 
 function toggle_visibility(id) {
@@ -29,7 +30,9 @@ function toggle_visibility(id) {
        e.style.display = 'block';
  }
 
- const about = document.getElementById('about')
+ 
+
+ 
 about.addEventListener('click', _ => about.classList.toggle('is-active'))
 
 function toggle_visibility(id) {
